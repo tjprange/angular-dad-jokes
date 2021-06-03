@@ -7,12 +7,13 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
   @Output() buttonClicked = new EventEmitter();
-  @Input() materialButtonType = '';
-  @Input() color = '';
+  //@Input() materialButtonType = ''; // not working, not sure how to update the Material UI property on the component
+  @Input() color?: string;
+  @Input() label?: string;
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.materialButtonType);
+    // console.log(this.materialButtonType);
   }
 
   onButtonClick() {

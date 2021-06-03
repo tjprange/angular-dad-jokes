@@ -1,5 +1,9 @@
 <div class="container">
   <h3>Real knee slappers!</h3>
   <p *ngIf="randomDadJoke.length>0">{{randomDadJoke}}</p>
-  <app-button materialButtonType='mat-raised-button' color='primary' (buttonClicked)="getADadJoke($event)"></app-button>
+  <!-- <app-button materialButtonType='mat-raised-button' color='primary' (buttonClicked)="getADadJoke($event)"
+    label="Dad Jokes!">
+  </app-button> -->
+  <app-button color='primary' (buttonClicked)="getADadJoke($event)" label="Dad Joke!">
+  </app-button>
 </div>

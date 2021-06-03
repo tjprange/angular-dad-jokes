@@ -15,6 +15,5 @@ const Template: Story<ButtonComponent> = (args: ButtonComponent) => ({
 
 export const MaterialPrimaryRaisedButton = Template.bind({});
 // args refers to React props, Vue's props and Angular's @Input
-MaterialPrimaryRaisedButton.args = {
-  color = 'primary',
-};
+
+MaterialPrimaryRaisedButton.args = { label: 'Button' };
