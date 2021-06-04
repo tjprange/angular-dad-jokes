@@ -11,9 +11,7 @@ export class AppComponent {
   randomDadJoke = '';
 
   getADadJoke = () => {
-    this.dadJoke.search().subscribe((response: any) => {
-      // console.log(response.joke);
-
+    this.dadJoke.search().subscribe((response) => {
       this.randomDadJoke = response.joke;
     });
   };
